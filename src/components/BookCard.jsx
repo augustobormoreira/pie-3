@@ -10,7 +10,7 @@ export default function BookCard({ book, onClick }) {
         <span className={styles.categoryTag}>{book.category}</span>
         <span className={`${styles.availBadge} ${book.available ? styles.availYes : styles.availNo}`}>
           {book.available ? `✓ Disponível (${book.copies})` : '✗ Indisponível'}
-          {/* */}
+          {/**/}
         </span>
       </div>
     </div>
