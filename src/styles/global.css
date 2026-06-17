@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green: #2d9e5a;
+  --green-dark: #1e7a42;
+  --green-light: #e8f5ee;
+  --green-pale: #d0eedd;
+  --nav: #1a1f1a;
+  --nav-text: #fff;
+  --red: #e53935;
+  --orange: #f57c00;
+  --blue: #1565c0;
+  --purple: #6a1b9a;
+  --brown: #795548;
+  --teal: #00897b;
+  --gray: #6b7280;
+  --border: #e0e0e0;
+  --white: #fff;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 24px rgba(0, 0, 0, 0.16);
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #f0f4f0;
+  color: #1a1a1a;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Leaflet popup content styling overrides */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}

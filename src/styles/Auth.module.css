@@ -1,0 +1,178 @@
+.bg {
+  min-height: 100vh;
+  background: #ecf0ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 48px;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 36px 40px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: var(--shadow-lg);
+}
+
+.iconWrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--green-pale);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  color: var(--green);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: var(--gray);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: var(--red);
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.successMsg {
+  text-align: center;
+  padding: 16px 0;
+  color: var(--green);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.fieldGroup {
+  margin-bottom: 14px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.inputWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #9ca3af;
+}
+
+.inputWrap svg {
+  position: absolute;
+  left: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 9px 12px 9px 34px;
+  border: 1.5px solid var(--border);
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+  background: #fafafa;
+  color: #1a1a1a;
+}
+
+.input:focus {
+  border-color: var(--green);
+  background: #fff;
+}
+
+.eyeBtn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9ca3af;
+  padding: 2px;
+  font-size: 14px;
+}
+
+.primaryBtn {
+  width: 100%;
+  padding: 11px;
+  background: var(--green);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 4px;
+}
+
+.primaryBtn:hover {
+  background: var(--green-dark);
+}
+
+.primaryBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.linkRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.link {
+  color: var(--green);
+  font-size: 13px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.linkCenter {
+  color: var(--green);
+  font-size: 13px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  display: block;
+  margin: 12px auto 0;
+}
+
+.bottomText {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.hint {
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+  margin-top: 12px;
+}
