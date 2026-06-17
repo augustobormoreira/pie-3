@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ituiumapa
 
 Plataforma colaborativa de mapeamento de problemas urbanos para Ituiutaba, MG, com
@@ -83,3 +84,6 @@ Os hooks já estão desenhados para troca direta por chamadas HTTP reais:
 - `useProblems` → `GET/POST/DELETE /api/problems`
 - `useKohaCatalog` → API REST do Koha (`/api/v1/biblios`, `/api/v1/holds`)
 - `mapHelpers.reverseGeocode` → API de geocodificação reversa do Nominatim (OSM)
+=======
+# pie-3
+>>>>>>> 72f5f94a5859d5789c055dcdf23ce76278990583
