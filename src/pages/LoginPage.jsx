@@ -74,7 +74,10 @@ export default function LoginPage({ onLogin, onGoRegister, onGoForgot }) {
           <button className={styles.link} onClick={onGoRegister}>Não tenho login</button>
         </div>
 
-        <p className={styles.hint}>Demo: joao@email.com / 123456</p>
+        <p className={styles.hint}>
+          Demo cidadão: joao@email.com / 123456<br/>
+          Demo prefeitura: prefeitura@ituiutaba.mg.gov.br / prefeitura123
+        </p>
       </div>
     </div>
   )

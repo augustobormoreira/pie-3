@@ -22,6 +22,7 @@ export default function AddProblemModal({ clickData, onConfirm, onCancel }) {
         <button className={styles.closeBtn} onClick={onCancel}>✕</button>
         <h2 className={styles.title}>Adicionar novo problema</h2>
 
+        {/* Address (auto-filled) */}
         <div className={styles.fieldGroup}>
           <label className={styles.label}>
             Endereço{' '}
@@ -36,7 +37,7 @@ export default function AddProblemModal({ clickData, onConfirm, onCancel }) {
           </div>
         </div>
 
-
+        {/* Problem type */}
         <div className={styles.fieldGroup}>
           <label className={styles.label}>Tipo de problema</label>
           <div className={styles.selectWrap}>
@@ -58,7 +59,7 @@ export default function AddProblemModal({ clickData, onConfirm, onCancel }) {
           </div>
         </div>
 
-    
+        {/* Description */}
         <div className={styles.fieldGroup}>
           <label className={styles.label}>
             Descrição{' '}
@@ -72,7 +73,7 @@ export default function AddProblemModal({ clickData, onConfirm, onCancel }) {
           />
         </div>
 
-   
+        {/* Identity */}
         <div className={styles.fieldGroup}>
           <label className={styles.label}>Deseja se identificar?</label>
           <div className={styles.radioGroup}>

@@ -95,6 +95,16 @@
   font-weight: 600;
 }
 
+.roleBadge {
+  background: var(--green);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+  letter-spacing: 0.2px;
+}
+
 .avatar {
   width: 30px;
   height: 30px;
