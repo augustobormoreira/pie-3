@@ -1,0 +1,154 @@
+.navbar {
+  background: var(--nav);
+  color: var(--nav-text);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.logoAccent {
+  color: var(--green);
+}
+
+.tabs {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  gap: 2px;
+}
+
+.tab {
+  height: 48px;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-bottom: 2.5px solid transparent;
+  color: #aaa;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  color: var(--green-light);
+}
+
+.tabActive {
+  color: var(--green);
+  border-bottom-color: var(--green);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.guestText {
+  color: #ccc;
+}
+
+.userWrap {
+  position: relative;
+}
+
+.userBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 20px;
+  transition: background 0.2s;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.userBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.welcome {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.userName {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.caret {
+  font-size: 10px;
+  color: #aaa;
+}
+
+.dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  min-width: 200px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  z-index: 2000;
+  border: 1.5px solid var(--border);
+}
+
+.dropItem {
+  padding: 10px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropItem:hover {
+  background: var(--green-light);
+}
+
+.dropSep {
+  height: 1px;
+  background: var(--border);
+}
+
+.dropDanger {
+  color: var(--red);
+}
