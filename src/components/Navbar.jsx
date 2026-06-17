@@ -40,6 +40,9 @@ export default function Navbar({ user, onLogout, currentTab, setCurrentTab, show
               <span className={styles.userName}>
                 {user.name.split(' ').slice(0, 2).join(' ')}
               </span>
+              {user.role === 'prefeitura' && (
+                <span className={styles.roleBadge}>🏛️ Prefeitura</span>
+              )}
               <div className={styles.avatar}>{user.name[0]}</div>
               <span className={styles.caret}>▾</span>
             </button>
@@ -52,6 +55,11 @@ export default function Navbar({ user, onLogout, currentTab, setCurrentTab, show
                 <div className={styles.dropItem}>
                   <span>✉️</span> {user.email}
                 </div>
+                {user.role === 'prefeitura' && (
+                  <div className={styles.dropItem}>
+                    <span>🏛️</span> Conta institucional
+                  </div>
+                )}
                 <div className={styles.dropSep} />
                 <button
                   className={`${styles.dropItem} ${styles.dropDanger}`}

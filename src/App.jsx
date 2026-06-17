@@ -14,7 +14,7 @@ export default function App() {
   const [tab, setTab] = useState('map')        // 'map' | 'library'
   const [user, setUser] = useState(null)
 
-  const { problems, addProblem } = useProblems()
+  const { problems, addProblem, updateProblemStatus } = useProblems()
   const { toast, showToast, clearToast } = useToast()
 
   const handleLogin = (u) => {
@@ -71,6 +71,7 @@ export default function App() {
           user={user}
           problems={problems}
           onAddProblem={addProblem}
+          onUpdateStatus={updateProblemStatus}
           showToast={showToast}
         />
       )}

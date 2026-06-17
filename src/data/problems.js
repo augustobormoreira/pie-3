@@ -1,3 +1,6 @@
+// Seed data that simulates what would come from the backend database.
+// In production these would be fetched from GET /api/problems
+
 export const INITIAL_PROBLEMS = [
   {
     id: 1,
@@ -9,6 +12,9 @@ export const INITIAL_PROBLEMS = [
     userId: 1,
     anon: false,
     date: '2026-05-20',
+    status: 'em_revisao',
+    statusNote: 'Equipe de manutenção viária já notificada, visita técnica agendada.',
+    statusUpdatedAt: '2026-05-27',
   },
   {
     id: 2,
@@ -20,6 +26,9 @@ export const INITIAL_PROBLEMS = [
     userId: 1,
     anon: true,
     date: '2026-05-21',
+    status: 'nao_visto',
+    statusNote: '',
+    statusUpdatedAt: null,
   },
   {
     id: 3,
@@ -31,6 +40,9 @@ export const INITIAL_PROBLEMS = [
     userId: 1,
     anon: false,
     date: '2026-05-22',
+    status: 'resolvido',
+    statusNote: 'Coleta extra realizada e ponto de descarte irregular fiscalizado.',
+    statusUpdatedAt: '2026-05-25',
   },
   {
     id: 4,
@@ -42,6 +54,9 @@ export const INITIAL_PROBLEMS = [
     userId: 1,
     anon: true,
     date: '2026-05-23',
+    status: 'resolvido',
+    statusNote: 'Piscina esvaziada e esterilizada contra larvas pela vigilância sanitária.',
+    statusUpdatedAt: '2026-05-26',
   },
   {
     id: 5,
@@ -53,6 +68,9 @@ export const INITIAL_PROBLEMS = [
     userId: 1,
     anon: false,
     date: '2026-05-24',
+    status: 'em_revisao',
+    statusNote: 'Equipe de poda agendada para retirada nos próximos dias.',
+    statusUpdatedAt: '2026-05-27',
   },
   {
     id: 6,
@@ -64,6 +82,9 @@ export const INITIAL_PROBLEMS = [
     userId: 1,
     anon: true,
     date: '2026-05-25',
+    status: 'nao_visto',
+    statusNote: '',
+    statusUpdatedAt: null,
   },
   {
     id: 7,
@@ -75,5 +96,8 @@ export const INITIAL_PROBLEMS = [
     userId: 1,
     anon: false,
     date: '2026-05-26',
+    status: 'nao_visto',
+    statusNote: '',
+    statusUpdatedAt: null,
   },
 ]
