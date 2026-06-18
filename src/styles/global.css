@@ -34,7 +34,6 @@ button {
   font-family: inherit;
 }
 
-/* Leaflet popup content styling overrides */
 .leaflet-popup-content-wrapper {
   border-radius: 8px;
 }

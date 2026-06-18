@@ -44,8 +44,6 @@ export default function BookDetailModal({ book, onClose, onReserve }) {
             onClick={() => book.available && onReserve(book)}
           >
             {book.available ? '📌 Reservar' : 'Indisponível'}
-
-            {/* Al*/}
           </button>
         </div>
       </div>

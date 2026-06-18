@@ -1,5 +1,4 @@
-// Ícone de status reutilizável (fora do mapa), com a mesma linguagem visual
-// dos badges desenhados nos pins do Leaflet.
+
 export default function StatusIcon({ status, size = 22 }) {
   const common = { width: size, height: size, viewBox: '0 0 16 16' }
 
@@ -21,7 +20,7 @@ export default function StatusIcon({ status, size = 22 }) {
     )
   }
 
-  // nao_visto
+  
   return (
     <svg {...common}>
       <polygon points="8,0 15,4 15,12 8,16 1,12 1,4" fill="#e53935" stroke="white" strokeWidth="1" />

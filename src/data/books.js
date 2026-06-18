@@ -13,8 +13,6 @@ export const BOOKS_CATALOG = [
   { id: 12, title: '1984',                        author: 'George Orwell',         year: 1949, category: 'Ficção Científica',     available: false, copies: 0, emoji: '📓', location: 'Biblioteca Setor Norte' },
 ]
 
-{/* Adicionar mais livros nessa sessão */}
-
 export function searchBooks({ query = '', category = 'all' }) {
   const q = query.toLowerCase()
   return BOOKS_CATALOG.filter((b) => {
