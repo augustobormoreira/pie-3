@@ -1,11 +1,4 @@
 import L from 'leaflet'
-
-/**
- * Gera o SVG do selo de status (badge) sobreposto ao pin.
- * - em_revisao  -> triângulo amarelo com "!"
- * - resolvido   -> círculo verde com "✓"
- * - nao_visto   -> hexágono vermelho com "!"
- */
 function statusBadgeSvg(status) {
   switch (status) {
     case 'em_revisao':
@@ -33,11 +26,6 @@ function statusBadgeSvg(status) {
   }
 }
 
-/**
- * Creates a custom SVG map pin for a given color and letter label,
- * with a small status-indicator badge (triângulo/círculo/hexágono)
- * overlaid in the top-right corner.
- */
 export function createMarkerIcon(color, letter, status) {
   const svg = `
     <svg xmlns="http://www.w3.org/2000/svg" width="44" height="46" viewBox="0 0 44 46" overflow="visible">
@@ -60,13 +48,7 @@ export function createMarkerIcon(color, letter, status) {
   })
 }
 
-/**
- * Simulates reverse geocoding from lat/lng.
- * In production this would call Nominatim: 
- *   GET https://nominatim.openstreetmap.org/reverse?lat=...&lon=...&format=json
- */
 export async function reverseGeocode(lat, lng) {
-  // Simulate API latency
   await new Promise((r) => setTimeout(r, 200))
   return `${lat.toFixed(4)}°S, ${lng.toFixed(4)}°O — Ituiutaba, MG`
 }

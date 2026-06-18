@@ -22,14 +22,12 @@ export default function MapPage({ user, problems, onAddProblem, onUpdateStatus, 
   const { filters, toggleType, setPeriod, setOnlyMine, applyFilters } =
     useMapFilters(user.id)
 
-  // Expose a global handler so popup buttons (rendered as raw HTML by Leaflet)
-  // can trigger React state updates.
   useEffect(() => {
     window.__openProblemDetail = (id) => setSelectedProblemId(id)
     return () => { delete window.__openProblemDetail }
   }, [])
 
-  // Initialize Leaflet map once
+ 
   useEffect(() => {
     if (mapInstanceRef.current) return
 
@@ -58,7 +56,6 @@ export default function MapPage({ user, problems, onAddProblem, onUpdateStatus, 
     }
   }, [])
 
-  // Re-render markers when problems or filters change
   useEffect(() => {
     if (!mapInstanceRef.current) return
 
@@ -138,11 +135,11 @@ export default function MapPage({ user, problems, onAddProblem, onUpdateStatus, 
 
         <div className={styles.statsBar}>
           <span className={styles.statsDot} />
-          {visibleCount} ocorrência{visibleCount !== 1 ? 's' : ''} visível{visibleCount !== 1 ? 'is' : ''}
+          {visibleCount} ocorrência{visibleCount !== 1 ? 's' : ''} visí{visibleCount !== 1 ? 'veis' : 'vel'}
         </div>
 
         <div className={styles.hint}>
-          Clique no mapa para reportar um problema · clique em um pin para ver detalhes
+          Clique no mapa para reportar um problema · Clique em um pin para ver detalhes
         </div>
       </div>
 

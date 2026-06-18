@@ -50,7 +50,7 @@ export default function RegisterPage({ onBack, onRegister }) {
         <p className={styles.subtitle}>Preencha os dados abaixo para criar seu cadastro.</p>
         {error && <p className={styles.error}>{error}</p>}
 
-        {/* Name */}
+       
         <div className={styles.fieldGroup}>
           <label className={styles.label}>Nome completo</label>
           <div className={styles.inputWrap}>
@@ -60,7 +60,7 @@ export default function RegisterPage({ onBack, onRegister }) {
           </div>
         </div>
 
-        {/* Email */}
+      
         <div className={styles.fieldGroup}>
           <label className={styles.label}>E-mail</label>
           <div className={styles.inputWrap}>
@@ -70,7 +70,7 @@ export default function RegisterPage({ onBack, onRegister }) {
           </div>
         </div>
 
-        {/* Password fields */}
+      
         {[['password', 'Senha', 0], ['password2', 'Confirmar senha', 1]].map(([key, label, i]) => (
           <div className={styles.fieldGroup} key={key}>
             <label className={styles.label}>{label}</label>

@@ -13,7 +13,6 @@ export default function ProblemDetailModal({ problem, currentUser, onClose, onUp
   const [draftNote, setDraftNote] = useState(problem?.statusNote || '')
   const [saving, setSaving] = useState(false)
 
-  // Reset draft whenever a different problem is opened
   useEffect(() => {
     setDraftStatus(problem?.status)
     setDraftNote(problem?.statusNote || '')
@@ -73,7 +72,6 @@ export default function ProblemDetailModal({ problem, currentUser, onClose, onUp
 
         <div className={styles.divider} />
 
-        {/* Resposta da Prefeitura — sempre visível para qualquer usuário */}
         <div className={styles.infoBlock}>
           <div className={styles.infoLabel}>Resposta da Prefeitura</div>
           {problem.statusNote ? (
@@ -91,7 +89,6 @@ export default function ProblemDetailModal({ problem, currentUser, onClose, onUp
           )}
         </div>
 
-        {/* Painel administrativo — somente para a conta da Prefeitura */}
         {isPrefeitura && (
           <>
             <div className={styles.divider} />

@@ -6,7 +6,7 @@ const ALL_TYPES = new Set(PROBLEM_TYPES.map((t) => t.id))
 export function useMapFilters(userId) {
   const [filters, setFilters] = useState({
     types: new Set(ALL_TYPES),
-    period: 'all',   // 'all' | '7' | '30'
+    period: 'all',
     onlyMine: false,
   })
 

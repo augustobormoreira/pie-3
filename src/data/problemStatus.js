@@ -1,4 +1,3 @@
-// Status que a Prefeitura pode atribuir a um problema reportado.
 export const PROBLEM_STATUS = {
   nao_visto: {
     id: 'nao_visto',

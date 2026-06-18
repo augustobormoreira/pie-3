@@ -37,9 +37,7 @@ export default function Navbar({ user, onLogout, currentTab, setCurrentTab, show
               onClick={() => setDropOpen((o) => !o)}
             >
               <span className={styles.welcome}>Bem vindo,</span>
-              <span className={styles.userName}>
-                {user.name.split(' ').slice(0, 2).join(' ')}
-              </span>
+             
               {user.role === 'prefeitura' && (
                 <span className={styles.roleBadge}>🏛️ Prefeitura</span>
               )}

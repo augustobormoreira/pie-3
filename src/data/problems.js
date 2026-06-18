@@ -1,6 +1,3 @@
-// Seed data that simulates what would come from the backend database.
-// In production these would be fetched from GET /api/problems
-
 export const INITIAL_PROBLEMS = [
   {
     id: 1,
